@@ -15,12 +15,24 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("hello world"),
         ),
-        body: Center(child: ElevatedButton(onPressed: (){}, child: const Text("Click Me"))),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              print("Hello World");
+            },
+            child: const Text("Click Me"),
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
-            BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
             BottomNavigationBarItem(
-                label: "Settings", icon: Icon(Icons.settings))
+              label: "Home",
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: "Settings",
+              icon: Icon(Icons.settings),
+            )
           ],
         ),
       ),
