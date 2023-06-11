@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
+  String buttonName = "Click Me";
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
             onPressed: () {
               print("Hello World");
             },
-            child: const Text("Click Me"),
+            child:  Text(buttonName),
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
